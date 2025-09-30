@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="pwd-container">
+        <h1 id="pwd-header">> Generate a secure password</h1>
+        <div id="pwd-field-container">
+            <span id="pwd-fields">Click on 'Generate Password'</span>
+            <img id="copy-on-click" src="icons/copy-solid-full.svg"/>
+        </div>
+
+        <hr />
+
+        <h2>Customize your password</h3>
+        <div id="settings-container">
+            <div id="checkboxes-container">
+                <div>
+                    <input type="checkbox" id="upper" name="upper" checked="true"/>
+                    <label for="upper">Uppercase</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="lower" name="lower" />
+                    <label for="lower">Lowercase</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="number" name="numeric" />
+                    <label for="numeric">Numeric</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="symbol" name="symbol" />
+                    <label for="symbols">Symbols</label>
+                </div>
+            </div>
+            <div id="length-container">
+                <label for="pwd-len">Password Length (8-40): </label>
+                <input type="number" id="pwd-len" name="pwd-len" min="8" max="40" value="8"/>
+            </div>
+        </div>
+        <button id="gen-btn">Generate Password</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
